@@ -14,12 +14,21 @@ config/name="web"
 run/main_scene="uid://bjljnnhrt533k"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/show_image=false
-config/icon="res://icon.svg"
+config/icon="res://assets/icon.svg"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://_export/": "gray",
+"res://assets/": "green",
+"res://scenes/": "red",
+"res://scripts/": "yellow"
+}
 
 [input]
 

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjljnnhrt533k"]
+
+[ext_resource type="PackedScene" uid="uid://b3ulrtg7v0isq" path="res://scenes/player.tscn" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://dlctyah5sn7bu" path="res://assets/icon.svg" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=804525492]
+
+[node name="Player" parent="." unique_id=1993893411 instance=ExtResource("1_0wfyh")]
+z_index = 1
+position = Vector2(401, 346)
+
+[node name="Goober" type="Sprite2D" parent="." unique_id=1558085021]
+position = Vector2(1003.5, 80)
+scale = Vector2(1.4140625, 0.40625)
+texture = ExtResource("2_0wfyh")
