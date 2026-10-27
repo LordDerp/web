@@ -7,9 +7,9 @@
 
 [node name="Player" parent="." unique_id=1993893411 instance=ExtResource("1_0wfyh")]
 z_index = 1
-position = Vector2(401, 346)
+position = Vector2(578, 325)
 
 [node name="Goober" type="Sprite2D" parent="." unique_id=1558085021]
-position = Vector2(1003.5, 80)
+position = Vector2(861, 80)
 scale = Vector2(1.4140625, 0.40625)
 texture = ExtResource("2_0wfyh")
