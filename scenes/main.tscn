@@ -3,13 +3,23 @@
 [ext_resource type="PackedScene" uid="uid://b3ulrtg7v0isq" path="res://scenes/player.tscn" id="1_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://dlctyah5sn7bu" path="res://assets/icon.svg" id="2_0wfyh"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_37psj"]
+size = Vector2(179, 50)
+
 [node name="Main" type="Node2D" unique_id=804525492]
 
 [node name="Player" parent="." unique_id=1993893411 instance=ExtResource("1_0wfyh")]
 z_index = 1
 position = Vector2(578, 325)
+swing_speed = 0.215
 
-[node name="Goober" type="Sprite2D" parent="." unique_id=1558085021]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1322465946]
+
+[node name="Goober" type="Sprite2D" parent="StaticBody2D" unique_id=1558085021]
 position = Vector2(861, 80)
 scale = Vector2(1.4140625, 0.40625)
 texture = ExtResource("2_0wfyh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1172450534]
+position = Vector2(860.5, 79.035)
+shape = SubResource("RectangleShape2D_37psj")
